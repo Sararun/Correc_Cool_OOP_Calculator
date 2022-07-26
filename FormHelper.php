@@ -101,7 +101,7 @@ class FormHelper {
         return implode('', $tmp);
     }
 
-    protected function isOptionSelected($name, $value){//проверка присутствия имени
+    protected function isOptionSelected($name, $value){
         if(!isset($this->values[$name])){
             return false;
         }elseif (is_array($this->values[$name])){
